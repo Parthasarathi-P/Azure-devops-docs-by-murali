@@ -17,3 +17,6 @@ https://forms.office.com/Pages/DesignPageV2.aspx?saveresponseformid=v4j5cvGGr0GR
 2. You will see the below options.
 3. Click on Get started using Azure DevOps and click on Open Azure Devops.
 4. You can check your Organizations in https://aex.dev.azure.com/me?mkt=en-US
+
+# In order to push the Images to ACR or to deploy on Webapp by using Azure Devops Pipeline, we must assign the Devops user as owner role for azure resources.
+
