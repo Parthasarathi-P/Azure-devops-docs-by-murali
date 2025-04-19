@@ -23,5 +23,6 @@ https://forms.office.com/Pages/DesignPageV2.aspx?saveresponseformid=v4j5cvGGr0GR
 # to deploy lms on webapp by dynamic cofiguration using ACR, Redis, flexi server and environment variable ravi sir code does not workd that is node 16.
 for this we are using murlai's repo code that is forked to "hiparthapanda" github name of repo is lms-app
 
-
+# Deploy lms to static webapp before deploy pipeline runs in azure devops or github from where and which branch web app is pulling code go there and in .env update backend url 
+ex- VITE_API_URL=https://webapp-lms-be-hkbjamgke7akfwc6.eastus-01.azurewebsites.net/api
 
