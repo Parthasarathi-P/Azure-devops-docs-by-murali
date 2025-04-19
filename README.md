@@ -20,3 +20,8 @@ https://forms.office.com/Pages/DesignPageV2.aspx?saveresponseformid=v4j5cvGGr0GR
 
 # In order to push the Images to ACR or to deploy on Webapp by using Azure Devops Pipeline, we must assign the Devops user as owner role for azure resources.
 
+# to deploy lms on webapp by dynamic cofiguration using ACR, Redis, flexi server and environment variable ravi sir code does not workd that is node 16.
+for this we are using murlai's repo code that is forked to "hiparthapanda" github name of repo is lms-app
+
+
+
