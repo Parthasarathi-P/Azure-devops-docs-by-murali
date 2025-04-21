@@ -1,0 +1,28 @@
+AKS 
+workstation connect to aks
+create ACR
+pull code
+create image 
+push to ACR
+attach ACR to AKS
+create postgres deployment
+create prestiance volume
+create backend deployment using ACR image
+host frontend on webapp
+
+
+
+create postgres use 
+AKS use config map and secret
+host frontend on webapp
+
+
+create postgres use container instance instance of AKS
+use environment variables for AKS
+host frontend on webapp
+================================= 
+done
+
+use postgres on vm for low cost 
+AKS use key vault
+host frontend on webapp
