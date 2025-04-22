@@ -53,3 +53,8 @@ then browse frontend site and on browser in place of https:// keep http://
 it will open as not secure and the site will be accessable
 =================================================================================
 
+lms backend deployment on AKS and stories 9 all deployment yamls and entire repo forked from mubeen is stored on hiparthapanda github.
+repo name -lms-public-yamls
+
+
+
