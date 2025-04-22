@@ -26,3 +26,30 @@ for this we are using murlai's repo code that is forked to "hiparthapanda" githu
 # Deploy lms to static webapp before deploy pipeline runs in azure devops or github from where and which branch web app is pulling code go there and in .env update backend url 
 ex- VITE_API_URL=https://webapp-lms-be-hkbjamgke7akfwc6.eastus-01.azurewebsites.net/api
 
+================================================================
+create postgres use container instance instance of AKS
+use environment variables for AKS
+host frontend on webapp
+================================= 
+done---- not functionating as expected request goes to backend but backend api to db fetch did not work 
+this was due to an issue
+--Mixed content: load all resources via HTTPS to improve the security of your site
+Even though the initial HTML page is loaded over a secure HTTPS connection, some resources like images, stylesheets or scripts are being accessed over an insecure HTTP connection. Usage of insecure resources is restricted to strengthen the security of your entire site.
+
+Reason of the issue-
+this issue triggers if we are deploying site backend by using container instance that is on http not on https
+but the site running on static webapp comes from https. so, frontend header reading data from non secure http creates an issue.
+
+Resolutio-
+static always runs on https we can't change it to http, here we must look for a solution where container instance will be on https.
+
+how i resolved
+deployed the frontend on webapp by creating frontend image
+on web app configuration setting modified
+FTP state - all allowed
+HTTPS Only - off
+
+then browse frontend site and on browser in place of https:// keep http://
+it will open as not secure and the site will be accessable
+=================================================================================
+
