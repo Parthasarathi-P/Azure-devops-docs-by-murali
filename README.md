@@ -57,4 +57,13 @@ lms backend deployment on AKS and stories 9 all deployment yamls and entire repo
 repo name -lms-public-yamls
 
 
+==================================================
+Don't follow mubeen's document on attaching acr to aks fail.
+if' it's success it does not give a clear message it shows same null ony.
 
+verify by cmd-
+role assignment list \
+  --scope $(az acr show --name lmsimages --query id --output tsv) \
+  --query "[?roleDefinitionName=='AcrPull']" \
+  --output table
+==================================================
