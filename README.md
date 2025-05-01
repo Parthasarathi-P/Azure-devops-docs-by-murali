@@ -67,3 +67,21 @@ role assignment list \
   --query "[?roleDefinitionName=='AcrPull']" \
   --output table
 ==================================================
+
+If you disabled local account on the cluster and went for microsoft entra ID authentication with RBACK
+1. create group add members to the group.
+2. assign role on cluster for the group.
+3. if you delete that group before that you must enable individual role on the group else it won't work
+4. if deleted the group by miss then create a new group and add the group to the cluster.
+5. here the group will have acess in inside cluster resources.
+     az aks update \
+        --resource-group self-hosted-cluster-RG \
+        --name SNP-AKS \
+        --aad-admin-group-object-ids 508de1e3-31f1-4d9f-916d-07251dbf7e77
+
+   executable on bash.
+
+   ======================================================
+
+   
+
